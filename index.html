@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LifeCare - Student Health & Academic Management</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">LifeCare</div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="pages/features.html">Features</a>
+                <a href="pages/about.html">About</a>
+                <a href="pages/contact.html">Contact</a>
+                <span id="user-info"></span>
+                <button id="logout-btn" class="logout-btn" onclick="logout()" style="display: none;">Logout</button>
+                <a href="pages/login.html" id="login-link">Login</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>LifeCare</h1>
+            <p>Manage Your Health, Academic Duties, Time, and Finances in One Organized System</p>
+            <button class="btn-primary" onclick="window.location.href='pages/login.html'">Get Started</button>
+        </div>
+    </section>
+
+    <section class="intro-section">
+        <h2>What is LifeCare?</h2>
+        <p>LifeCare is a minimalist, professional student-centered digital platform designed especially for nursing students. It helps you manage health awareness, personal health and lifestyle, nursing student duty preparation, time and task management, and financial management - all in one secure, organized system.</p>
+    </section>
+
+    <section class="features-grid-intro">
+        <h2>Core Features</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <h3>Health Awareness</h3>
+                <p>Access and manage your medical history, allergies, medications, and health records</p>
+            </div>
+            <div class="feature-card">
+                <h3>Personal Health Management</h3>
+                <p>Track symptoms, exercise, diet, and maintain your overall health</p>
+            </div>
+            <div class="feature-card">
+                <h3>Duty Preparation</h3>
+                <p>Prepare for nursing duties with checklists and motivational support</p>
+            </div>
+            <div class="feature-card">
+                <h3>Task Management</h3>
+                <p>Organize tasks, track deadlines, and manage your time effectively</p>
+            </div>
+            <div class="feature-card">
+                <h3>Financial Management</h3>
+                <p>Set budgets, track expenses, and control your spending</p>
+            </div>
+            <div class="feature-card">
+                <h3>Calendar System</h3>
+                <p>Schedule and view your academic and clinical duties</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>Copyright 2026 LifeCare. All rights reserved.</p>
+    </footer>
+
+    <script src="js/auth.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
