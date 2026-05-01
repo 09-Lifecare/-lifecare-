@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - LifeCare</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">LifeCare Dashboard</div>
+            <div class="nav-links">
+                <a href="../index.html">Home</a>
+                <span id="user-display"></span>
+                <button class="logout-btn" onclick="logout()">Logout</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="dashboard-container">
+        <div class="sidebar">
+            <div class="sidebar-item active" id="dashboard-link" onclick="showSection('dashboard'); setActiveSidebar('dashboard-link');">Dashboard</div>
+            <div class="sidebar-item" id="health-link" onclick="showSection('health'); setActiveSidebar('health-link');">Health</div>
+            <div class="sidebar-item" id="tasks-link" onclick="showSection('tasks'); setActiveSidebar('tasks-link');">Tasks</div>
+            <div class="sidebar-item" id="expenses-link" onclick="showSection('expenses'); setActiveSidebar('expenses-link');">Expenses</div>
+            <div class="sidebar-item" id="duties-link" onclick="showSection('duties'); setActiveSidebar('duties-link');">Duty Checklist</div>
+            <div class="sidebar-item" id="calendar-link" onclick="showSection('calendar'); setActiveSidebar('calendar-link');">Calendar</div>
+            <div class="sidebar-item" id="profile-link" onclick="showSection('profile'); setActiveSidebar('profile-link');">Profile</div>
+        </div>
+
+        <div class="main-content">
+            <div class="section" id="dashboard">
+                <h2>Dashboard Overview</h2>
+                <div id="overview-content"></div>
+            </div>
+
+            <div class="section hidden" id="health">
+                <h2>Health Awareness & Medical Access</h2>
+                <div class="widget" id="health-content"></div>
+            </div>
+
+            <div class="section hidden" id="tasks">
+                <h2>Task Management</h2>
+                <div class="widget" id="tasks-content"></div>
+            </div>
+
+            <div class="section hidden" id="expenses">
+                <h2>Financial Management</h2>
+                <div class="widget" id="expenses-content"></div>
+            </div>
+
+            <div class="section hidden" id="duties">
+                <h2>Nursing Student Duty Preparation</h2>
+                <div class="widget" id="duties-content"></div>
+            </div>
+
+            <div class="section hidden" id="calendar">
+                <h2>Calendar & Schedule</h2>
+                <div class="widget" id="calendar-content"></div>
+            </div>
+
+            <div class="section hidden" id="profile">
+                <h2>Profile</h2>
+                <div class="widget" id="profile-content"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/auth.js"></script>
+    <script src="../js/dashboard.js"></script>
+</body>
+</html>
